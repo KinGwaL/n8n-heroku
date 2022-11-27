@@ -48,25 +48,22 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free"
+      "size": "basic"
     },
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "basic"
     }
   },
   "addons": [
     {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "14"
-      }
+      "plan": "heroku-postgresql:standard-0"
     },
     {
       "plan": "papertrail:choklad"
     },
     {
-      "plan": "heroku-redis:hobby-dev"
+      "plan": "heroku-redis:premium-0"
     }
   ]
 }
